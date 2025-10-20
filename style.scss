@@ -250,58 +250,167 @@ main{
     }
 
 
-    
-
 
     section.view5{
-        @include flex-column(4rem);
+        @include flex-column(2rem);
         width: 100%;
-        gap: 6rem;
-        padding: 5rem;
-
+        padding: 1rem;
         
+
+        .card{
+            width: 100%;
+            border-radius: 0.7rem;
+            background-image: url(./view3.webp);
+            background-size: cover;
+            aspect-ratio: 1/1;
+
+
+
+            @include flex-column(0rem);
+            justify-content: space-between;
+            padding: 1rem;
+
+
+            .icon,.buttom{
+                background-color: rgba(194, 193, 193, 0.253);
+                backdrop-filter: blur(5px);
+                border: 0.5px solid white;
+                border-radius: 10px;
+            }
 
             .top{
-                width: 100%;
-                
-                img{
-                    width: 100%;
-                    border-radius: 10px;
-
-
-                    .text{
-                        justify-content: space-around;
-                        background-color: white;
-                        backdrop-filter: blur(7rem);
-                    }
-
-                }
+                font-size: larger;
+                display: flex;
+                gap: 2rem;
+                justify-content: flex-end;
             }
 
-            .middle{
-                width: 100%;
 
-                img{
-                    width: 100%;
-                    border-radius: 10px;
-                }
+            .icon{
+                width: fit-content;
+                border-radius: 50%;
             }
+
 
             .buttom{
-                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem 1rem;
 
-                img{
-                    width: 100%;
-                    border-radius: 10px;
+
+                P{
+                    text-transform: uppercase;
                 }
             }
-        
+        }
+    }
+
+    section.view6{
+        width: 100%;
+        @include flex-column(2rem);
+        padding: 1.5rem;
+        gap: 1rem;
 
 
+        .top{
+            width: 100%;
+
+            img{
+                width: 100%;
+                border-radius: 10px;
+
+            }
+        }
+
+        .buttom{
+            background-color: #1E1E1E;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 10px;
+            gap: 1.5rem;
+
+            .text{
+                @include flex-column(3rem);
+
+                h1{
+                    font-weight: 200;
+                    font-size: 2.9rem;
+                    text-transform: uppercase;
+                }
+
+                i{
+                    border: 0.5px solid white;
+                    border-radius: 50%;
+                }
+
+                button{
+                    width: fit-content;
+                    border: none;
+                    outline: noe;
+                    padding: 0.7rem 1.5rem;
+                    border: 0.7rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    section.view7{
+        width: 100%;
+        @include flex-column(2rem);
+        padding: 1.5rem;
+        gap: 1rem;
+
+
+        // .top{
+        //     width: 100%;
+
+        //     img{
+        //         width: 100%;
+        //         border-radius: 10px;
+
+        //     }
+        // }
+
+        .buttom{
+            background-color: rgb(172, 172, 111);
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 10px;
+            gap: 1.5rem;
+            color: #121212;
+
+            .text{
+                @include flex-column(3rem);
+
+                h1{
+                    font-weight: 200;
+                    font-size: 2.9rem;
+                    text-transform: uppercase;
+                }
+
+                i{
+                    border: 0.5px solid white;
+                    border-radius: 50%;
+                }
+
+                button{
+                    width: 95%;
+                    border: none;
+                    outline: noe;
+                    padding: 0.7rem 1.5rem;
+                    border: 0.7rem;
+                    border-radius: 5px;
+                    align-items: center;
+                }
+            }
+        }
     }
 
 
-       
+ 
 
 
 
@@ -408,9 +517,80 @@ main{
         }
 
         section.view5{
-            @include flex-column(2rem)
+            flex-direction: row;
+            padding: 1rem 4rem;
 
 
+        }
+
+        section.view6{
+            flex-direction: row;
+            padding: 1rem 3rem;
+            .top , .buttom{
+                width: 50%;
+            }
+
+            .buttom{
+                justify-content: flex-start;
+                padding: 3rem;
+                
+
+                .text{
+                    gap: 1.5rem;
+                    h1{
+                        font-size: 3rem;
+                        padding: 5rem 0rem ;
+                    }
+
+                    p{
+                        color: rgb(121, 121, 121);
+                    }
+                    
+
+                    
+                }
+            }
+        }
+
+        section.view7{
+            flex-direction: row;
+            padding: 1rem 3rem;
+            .top , .buttom{
+                width: 100%;
+            }
+
+            .buttom{
+                justify-content: space-between;
+                padding: 3rem;
+                
+
+                .text{
+                    gap: 1.5rem;
+                    justify-content: space-evenly;
+                    h1{
+
+                        font-size: 5.3rem;
+                        padding: -1rem 4rem ;
+                    }
+
+                    p{
+                        color: rgb(121, 121, 121);
+                    }
+                    button{
+                        display: flex;
+                        width: fit-content;
+                        color: white;
+                        background-color: #121212;
+                        justify-content: first baseline;
+                        position: relative;
+                        left: 80rem;
+
+                    }
+                    
+
+                    
+                }
+            }
         }
     }
 }

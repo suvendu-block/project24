@@ -198,37 +198,133 @@ main section.view4 .buttom .text h6 {
 main section.view5 {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   width: 100%;
-  gap: 6rem;
-  padding: 5rem;
+  padding: 1rem;
 }
-main section.view5 .top {
+main section.view5 .card {
+  width: 100%;
+  border-radius: 0.7rem;
+  background-image: url(./view3.webp);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view5 .card .icon, main section.view5 .card .buttom {
+  background-color: rgba(194, 193, 193, 0.253);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 0.5px solid white;
+  border-radius: 10px;
+}
+main section.view5 .card .top {
+  font-size: larger;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+main section.view5 .card .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.view5 .card .buttom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+main section.view5 .card .buttom P {
+  text-transform: uppercase;
+}
+main section.view6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+main section.view6 .top {
   width: 100%;
 }
-main section.view5 .top img {
+main section.view6 .top img {
   width: 100%;
   border-radius: 10px;
 }
-main section.view5 .top img .text {
-  justify-content: space-around;
-  background-color: white;
-  -webkit-backdrop-filter: blur(7rem);
-          backdrop-filter: blur(7rem);
-}
-main section.view5 .middle {
-  width: 100%;
-}
-main section.view5 .middle img {
-  width: 100%;
+main section.view6 .buttom {
+  background-color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
   border-radius: 10px;
+  gap: 1.5rem;
 }
-main section.view5 .buttom {
-  width: 100%;
+main section.view6 .buttom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-main section.view5 .buttom img {
+main section.view6 .buttom .text h1 {
+  font-weight: 200;
+  font-size: 2.9rem;
+  text-transform: uppercase;
+}
+main section.view6 .buttom .text i {
+  border: 0.5px solid white;
+  border-radius: 50%;
+}
+main section.view6 .buttom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: noe;
+  padding: 0.7rem 1.5rem;
+  border: 0.7rem;
+  border-radius: 5px;
+}
+main section.view7 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+main section.view7 .buttom {
+  background-color: rgb(172, 172, 111);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
   border-radius: 10px;
+  gap: 1.5rem;
+  color: #121212;
+}
+main section.view7 .buttom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view7 .buttom .text h1 {
+  font-weight: 200;
+  font-size: 2.9rem;
+  text-transform: uppercase;
+}
+main section.view7 .buttom .text i {
+  border: 0.5px solid white;
+  border-radius: 50%;
+}
+main section.view7 .buttom .text button {
+  width: 95%;
+  border: none;
+  outline: noe;
+  padding: 0.7rem 1.5rem;
+  border: 0.7rem;
+  border-radius: 5px;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -297,8 +393,60 @@ main section.view5 .buttom img {
     color: #1E1E1E;
   }
   main section.view5 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view6 {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+  main section.view6 .top, main section.view6 .buttom {
+    width: 50%;
+  }
+  main section.view6 .buttom {
+    justify-content: flex-start;
+    padding: 3rem;
+  }
+  main section.view6 .buttom .text {
+    gap: 1.5rem;
+  }
+  main section.view6 .buttom .text h1 {
+    font-size: 3rem;
+    padding: 5rem 0rem;
+  }
+  main section.view6 .buttom .text p {
+    color: rgb(121, 121, 121);
+  }
+  main section.view7 {
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+  main section.view7 .top, main section.view7 .buttom {
+    width: 100%;
+  }
+  main section.view7 .buttom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view7 .buttom .text {
+    gap: 1.5rem;
+    justify-content: space-evenly;
+  }
+  main section.view7 .buttom .text h1 {
+    font-size: 5.3rem;
+    padding: -1rem 4rem;
+  }
+  main section.view7 .buttom .text p {
+    color: rgb(121, 121, 121);
+  }
+  main section.view7 .buttom .text button {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    background-color: #121212;
+    justify-content: first baseline;
+    position: relative;
+    left: 80rem;
   }
 }/*# sourceMappingURL=style.css.map */
